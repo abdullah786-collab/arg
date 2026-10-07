@@ -1,0 +1,205 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>RevGuard Pro — Documentation</title>
+<style>
+	:root { --fg: #1d2327; --muted: #50575e; --bg: #fff; --card: #f6f7f7; --line: #dcdcde; --link: #135e96; }
+	@media (prefers-color-scheme: dark) { :root { --fg: #e6e6e6; --muted: #a7aaad; --bg: #1d2327; --card: #2c3338; --line: #3c434a; --link: #72aee6; } }
+	* { box-sizing: border-box; }
+	body { background: var(--bg); color: var(--fg); font: 16px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; margin: 0; }
+	main { margin: 0 auto; max-width: 52rem; padding: 1.5rem 1rem 4rem; }
+	h1 { font-size: 1.9rem; margin: 0 0 .25rem; }
+	h2 { border-top: 1px solid var(--line); font-size: 1.35rem; margin: 2.2rem 0 .6rem; padding-top: 1.2rem; }
+	h3 { font-size: 1.05rem; margin: 1.2rem 0 .3rem; }
+	a { color: var(--link); }
+	nav { background: var(--card); border-radius: 6px; margin: 1.2rem 0; padding: .8rem 1.2rem; }
+	nav ol { columns: 2 14rem; margin: 0; padding-left: 1.2rem; }
+	code, kbd { background: var(--card); border-radius: 3px; font-size: .92em; padding: .1em .35em; }
+	pre { background: var(--card); border-radius: 6px; overflow-x: auto; padding: .8rem 1rem; }
+	table { border-collapse: collapse; display: block; overflow-x: auto; width: 100%; }
+	th, td { border: 1px solid var(--line); padding: .4rem .6rem; text-align: left; vertical-align: top; }
+	th { background: var(--card); }
+	.note { background: var(--card); border-left: 4px solid var(--link); border-radius: 4px; margin: 1rem 0; padding: .6rem 1rem; }
+	.muted { color: var(--muted); }
+</style>
+</head>
+<body>
+<main>
+<h1>RevGuard Pro</h1>
+<p class="muted">Customer documentation · Version 1.0.0</p>
+
+<nav aria-label="Contents">
+<ol>
+	<li><a href="#requirements">Requirements</a></li>
+	<li><a href="#install">Installation and activation</a></li>
+	<li><a href="#overview">How it works</a></li>
+	<li><a href="#dashboard">Dashboard</a></li>
+	<li><a href="#ads">Ads</a></li>
+	<li><a href="#groups">Groups</a></li>
+	<li><a href="#placements">Placements</a></li>
+	<li><a href="#embedding">Shortcode and block</a></li>
+	<li><a href="#analytics">Analytics</a></li>
+		<li><a href="#settings">Settings</a></li>
+	<li><a href="#targeting">Targeting</a></li>
+	<li><a href="#scheduling">Scheduling</a></li>
+	<li><a href="#cache">Cache compatibility</a></li>
+	<li><a href="#privacy">Privacy and external requests</a></li>
+	<li><a href="#access">Who can use it</a></li>
+	<li><a href="#uninstall">Uninstalling and your data</a></li>
+	<li><a href="#troubleshooting">Troubleshooting</a></li>
+	<li><a href="#translation">Translation</a></li>
+</ol>
+</nav>
+
+<h2 id="requirements">Requirements</h2>
+<ul>
+	<li>WordPress 6.0 or newer.</li>
+	<li>PHP 8.2 or newer. On older PHP versions the plugin shows a notice and does not load.</li>
+	<li>Ad code from your advertiser or ad network, or your own HTML.</li>
+</ul>
+
+<h2 id="install">Installation and activation</h2>
+<ol>
+	<li>In WordPress, open <strong>Plugins → Add New → Upload Plugin</strong>.</li>
+	<li>Choose the plugin ZIP (<code>revguard-pro-1.0.0.zip</code>) and click <strong>Install Now</strong>. If your download is a larger package, unzip it first and upload only the plugin ZIP inside it.</li>
+	<li>Click <strong>Activate</strong>. A <strong>RevGuard Pro</strong> menu appears in the admin sidebar.</li>
+</ol>
+<p>Activation creates the plugin's database tables and gives the <strong>Administrator</strong> role access to the plugin (see <a href="#access">Who can use it</a>). The plugin works on its own and does not need a licence key or a service of its own. See <a href="#privacy">Privacy and external requests</a> for what your ad code may load in your visitors' browsers.</p>
+<p>You can also install it by uploading the unzipped <code>revguard-pro</code> folder to <code>wp-content/plugins/</code> and activating it from the Plugins screen.</p>
+
+<h2 id="overview">How it works</h2>
+<p>You create <strong>Ads</strong>, optionally collect them in <strong>Groups</strong> that rotate, and decide where they appear with <strong>Placements</strong> — or place them by hand with a shortcode or block. Everything is decided on your server when a page is built. RevGuard Pro adds no JavaScript of its own to your visitors' pages; see <a href="#privacy">Privacy and external requests</a> for what your ad code may load.</p>
+<p>If another plugin also inserts ads automatically, the same ad can appear twice. Use one automatic inserter at a time: either turn off <em>Insert ads automatically</em> in <a href="#settings">Settings</a>, or deactivate the other plugin. Shortcodes and blocks work either way.</p>
+
+<h2 id="dashboard">Dashboard</h2>
+<p>The Dashboard gives you an at-a-glance view:</p>
+<ul>
+	<li><strong>At a glance</strong> — real counts of your ads and placements, and (if you may view analytics) recent impressions.</li>
+	<li><strong>Suggestions</strong> — advice about how your ads are set up. These are suggestions only. They are not an approval, a certification or a compliance check, and they never block you from saving anything.</li>
+</ul>
+<p>If one panel cannot be loaded, it shows a short message and the rest of the page still works.</p>
+
+<h2 id="ads">Ads</h2>
+<p>An ad is the content you want to show. Open <strong>RevGuard Pro → Ads</strong> to see them in a standard WordPress list with status filters, bulk actions (activate, deactivate, delete) and row actions.</p>
+<h3>Add or edit an ad</h3>
+<table>
+	<tr><th>Field</th><th>What it does</th></tr>
+	<tr><td>Name</td><td>Only you see this. Use something you will recognise in a list.</td></tr>
+	<tr><td>Status</td><td><strong>Active</strong> or <strong>Inactive</strong>. An inactive ad is never shown. An active ad needs a creative.</td></tr>
+	<tr><td>Ad code</td><td>The HTML you want to show. It is displayed in the form as plain text and is never run inside the admin. See <a href="#adcode">What ad code accepts</a>.</td></tr>
+	<tr><td>Start / end</td><td>Optional. Leave both empty to show the ad all the time. See <a href="#scheduling">Scheduling</a>.</td></tr>
+</table>
+<p>The form also shows, read-only, who the ad is shown to (<em>Everyone</em> or <em>Restricted by rules</em>) — see <a href="#targeting">Targeting</a>.</p>
+<h3 id="adcode">What ad code accepts</h3>
+<p>Ad code is HTML. How it is treated depends on who saves it and on one setting:</p>
+<ul>
+	<li><strong>Filtered (the default).</strong> The code is passed through an allowlist when it is saved and again when it is shown. Kept: text formatting, headings, lists, links (<code>http</code>, <code>https</code>, <code>mailto</code> only), images and pictures, <code>div</code>, <code>span</code>, <code>ins</code>, and the attributes <code>class</code>, <code>id</code>, <code>data-*</code>, <code>style</code> (WordPress's safe CSS only), <code>href</code>, <code>src</code>, <code>srcset</code>, <code>alt</code> and a few layout attributes. Removed: script and frame tags, forms, event handlers such as <code>onclick</code>, and <code>javascript:</code> links. As with WordPress's own filter, the text that was inside a removed script tag stays on the page as plain text.</li>
+	<li><strong>Saved by a user without the WordPress <code>unfiltered_html</code> capability:</strong> always filtered, even if the unfiltered setting is on. Such a user can never store a script.</li>
+	<li><strong>Unfiltered mode (Settings, off by default).</strong> Ad code saved by a user who holds <code>unfiltered_html</code> (administrators on a single site, super administrators on multisite) is stored and output as written, including scripts. Only such a user can switch the setting on. Use it only if you trust everyone who holds that capability.</li>
+</ul>
+
+<h3>Deleting</h3>
+<p>Deleting shows a confirmation screen listing the items first. An ad that is still used by a group or placement cannot be deleted until it is removed there.</p>
+
+<h2 id="groups">Groups</h2>
+<p>A group rotates several ads in one spot. Open <strong>RevGuard Pro → Groups</strong>, add a group, tick the ads it should include and choose a rotation:</p>
+<ul>
+	<li><strong>Weighted random</strong> — picks an ad by its weight on every page. A higher weight is shown more often.</li>
+	<li><strong>In order</strong> — uses the order numbers you set and shows the first ad that is currently allowed to appear.</li>
+</ul>
+<p>Only active ads that are within their schedule are eligible. A group that is used by a placement cannot be deleted until the placement is changed.</p>
+
+<h2 id="placements">Placements</h2>
+<p>A placement tells the plugin where to insert an ad or group automatically. Open <strong>RevGuard Pro → Placements</strong>, add one and choose <em>What to show</em> (a single ad or a group) and a <em>Position</em>:</p>
+<table>
+	<tr><th>Position</th><th>Setting that goes with it</th></tr>
+	<tr><td>Before the content</td><td>—</td></tr>
+	<tr><td>After the content</td><td>—</td></tr>
+	<tr><td>After a paragraph</td><td>Paragraph number, 1 to 100</td></tr>
+	<tr><td>After a heading</td><td>Heading level, H2 to H6, and which heading of that level (1 = the first)</td></tr>
+	<tr><td>At a point in the content</td><td>Percent of the content</td></tr>
+	<tr><td>Manual (shortcode or block only)</td><td>The placement is kept but nothing is inserted automatically</td></tr>
+</table>
+<p><strong>Priority</strong> sets the order in which placements are applied: lower numbers first, and placements with equal numbers in the order they were created (lowest id first). Only one ad is placed at each spot, so if two placements want the same spot the lower number wins and the other is skipped. It never changes which ad a group picks. At most 20 ads are inserted automatically into one page. An active placement needs an ad or group to show. Automatic placements apply to the main content on your site's front end; they are not applied in feeds, REST responses, admin screens, embeds or excerpts. You can turn automatic insertion off completely in <a href="#settings">Settings</a>.</p>
+
+<h2 id="embedding">Shortcode and block</h2>
+<p>To place an ad by hand, use the shortcode with the id shown in the Ads or Groups list:</p>
+<pre>[revguard_pro ad="12"]
+[revguard_pro group="3"]
+[revguard_pro ad="12" class="my-class other-class"]</pre>
+<p>Give exactly one of <code>ad</code> or <code>group</code>. <code>class</code> is optional (up to three simple class names). Invalid shortcodes show nothing rather than an error.</p>
+<p>In the block editor, add the <strong>RevGuard Pro Ad</strong> block and choose an ad or group. The same ad is not repeated twice in the same post.</p>
+<p>For safety, a shortcode or block inside a post only shows ads when the post's author is allowed to manage ads. Outside posts (for example in a widget) it is always allowed.</p>
+
+<h2 id="analytics">Analytics</h2>
+<p><strong>RevGuard Pro → Analytics</strong> shows impressions per day and your top ads for the last 7, 30 or 90 days.</p>
+<div class="note"><strong>What is counted.</strong> One number only: how many times an ad's markup was added to a page your server built, per ad per day. It is not viewability, not clicks, and not an ad-network figure. No visitor information is stored and no clicks are tracked. Pages served from a full-page cache do not run the plugin, so those views are not counted — these figures are not traffic totals.</div>
+<p>You can switch counting off and choose how long daily totals are kept in <a href="#settings">Settings</a>.</p>
+
+<h2 id="settings">Settings</h2>
+<table>
+	<tr><th>Setting</th><th>What it does</th></tr>
+	<tr><td>Insert ads automatically using placements</td><td>On by default. Turn it off to show ads only where you use the shortcode or block.</td></tr>
+	<tr><td>Allow unfiltered HTML ad code</td><td>Advanced, off by default. Ad code saved by a user who holds the <code>unfiltered_html</code> capability is stored and shown as written, including scripts. Only such a user can turn it on. See <a href="#adcode">What ad code accepts</a>.</td></tr>
+	<tr><td>Count impressions</td><td>On by default. Counts how often each ad is added to a page, per day.</td></tr>
+	<tr><td>Keep statistics for (days)</td><td>7 to 3650, default 90. Older daily totals are deleted automatically. Out-of-range values are rejected, not adjusted silently.</td></tr>
+	<tr><td>Delete all data when the plugin is deleted</td><td>Off by default. See <a href="#uninstall">Uninstalling</a>.</td></tr>
+</table>
+
+<h2 id="targeting">Targeting</h2>
+<p>The plugin's engine can evaluate targeting rules — device, post type, taxonomy, logged-in state, user role, URL, referrer and query parameter — and an ad that has such rules only shows when they match. <strong>Version 1.0 has no screen for creating or editing targeting rules.</strong> Ads and placements are shown to everyone unless they already carry rules. Existing rules are never lost: they are preserved every time you save, and the edit form shows a read-only summary (<em>Everyone</em>, <em>Restricted by rules</em>, or <em>Unreadable (matches nothing)</em>).</p>
+
+<h2 id="scheduling">Scheduling</h2>
+<p>Each ad can have a start and an end time. Times are entered and shown in your site's time zone (set in <strong>Settings → General</strong>). Before the start time or after the end time the ad is not shown; with both empty it is always eligible. In groups, only ads inside their schedule take part in the rotation.</p>
+
+<h2 id="cache">Cache compatibility</h2>
+<p>Page caching plugins and hosts store a finished page and serve it again, so the plugin cannot run for those visitors. To avoid freezing the wrong ad into a cached page, RevGuard Pro does the following:</p>
+<ul>
+	<li>When a page involves an ad whose outcome depends on <strong>request details</strong> (device, referrer or query parameters), the plugin asks page caches not to store that response, by defining the <code>DONOTCACHEPAGE</code> constant and sending no-cache headers when headers have not been sent yet.</li>
+	<li>Outcomes that are stable for a page, or that depend on whether a visitor is logged in or on their role, stay on the normal cache path. Whether your cache serves logged-in visitors separately depends on your caching setup, so check it if you target by login state or role.</li>
+	<li>Developers can listen to the <code>revguard_pro_cache_decision</code> action, which receives the decision and the time of the next schedule change.</li>
+</ul>
+<div class="note"><strong>This is best-effort.</strong> It depends on your caching plugin honouring <code>DONOTCACHEPAGE</code> at the end of the request. A cache that decided earlier, headers that were already sent, a server or CDN cache that serves pages without running WordPress, or a page already stored in a cache cannot be controlled by the plugin. The plugin does not purge caches. When you change ads, groups, placements or schedules — or when a schedule starts or ends — clear your page cache so visitors see the new state.</div>
+
+<h2 id="privacy">Privacy and external requests</h2>
+<ul>
+	<li><strong>RevGuard Pro's own code</strong> makes no external requests, sets no cookies and stores no visitor personal data. Analytics count ad renderings per day and nothing about the visitor.</li>
+	<li><strong>Your ad code is separate.</strong> In the default filtered mode, scripts and frames are removed, so ad code can only show text, links and images; an image or link may of course point to another site. In unfiltered mode, ad code is output as written, so any script, tag or pixel in it runs in your visitors' browsers and may contact third parties, set cookies or process visitor data under their own terms. RevGuard Pro does not control or inspect that.</li>
+	<li><strong>Consent:</strong> RevGuard Pro does not include a consent tool. You are responsible for any notice or consent your site needs for the ad code you use.</li>
+</ul>
+
+<h2 id="access">Who can use it</h2>
+<p>Access uses three capabilities, granted to the <strong>Administrator</strong> role when the plugin is activated. There is no network-admin menu on multisite; each site has its own ads and settings.</p>
+<table>
+	<tr><th>Capability</th><th>Allows</th></tr>
+	<tr><td><code>rgp_manage_ads</code></td><td>Dashboard, Ads, Groups, Placements</td></tr>
+	<tr><td><code>rgp_view_analytics</code></td><td>Analytics</td></tr>
+	<tr><td><code>rgp_manage_settings</code></td><td>Settings</td></tr>
+</table>
+<p>Each user sees only the screens their capabilities allow. Every change needs both the capability and a valid security token.</p>
+
+<h2 id="uninstall">Uninstalling and your data</h2>
+<ul>
+	<li><strong>Deactivating</strong> keeps all your data.</li>
+	<li><strong>Deleting the plugin</strong> keeps your data too, unless you turned on <em>Delete all data when the plugin is deleted</em> in Settings <em>before</em> deleting. With that on, your ads, groups, placements, statistics and settings are removed (on multisite, for each site that turned it on).</li>
+</ul>
+
+<h2 id="troubleshooting">Troubleshooting</h2>
+<table>
+	<tr><th>Problem</th><th>What to check</th></tr>
+	<tr><td>The plugin does not load</td><td>Check you run PHP 8.2 or newer. An admin notice explains when the PHP version is too old.</td></tr>
+	<tr><td>My placements insert nothing</td><td>Check <em>Insert ads automatically</em> is on, the placement and the ad are <strong>Active</strong>, and the ad is inside its schedule.</td></tr>
+	<tr><td>A shortcode shows nothing</td><td>Use exactly one of <code>ad</code> or <code>group</code> with a valid id; make sure the ad is active and in schedule; and that the post's author may manage ads.</td></tr>
+	<tr><td>An ad changed but visitors still see the old page</td><td>Clear your page cache; see <a href="#cache">Cache compatibility</a>.</td></tr>
+	<tr><td>Impressions look low</td><td>Cached pages are not counted. See <a href="#analytics">Analytics</a>. Also check <em>Count impressions</em> is on.</td></tr>
+	<tr><td>My ad code lost scripts or attributes</td><td>Ad code is filtered with an allowlist by default; see <a href="#adcode">What ad code accepts</a>. If you need scripts, an administrator can enable <em>Allow unfiltered HTML ad code</em> in Settings and then save the ad again.</td></tr>
+	<tr><td>I cannot see a menu item</td><td>Your user role lacks the matching capability; see <a href="#access">Who can use it</a>.</td></tr>
+</table>
+
+<h2 id="translation">Translation</h2>
+<p>The plugin is translation-ready (text domain <code>revguard-pro</code>). A template file, <code>languages/revguard-pro.pot</code>, is included. Put translation files named <code>revguard-pro-&lt;locale&gt;.mo</code> (and <code>.po</code>) in the plugin's <code>languages</code> folder, or use a translation tool such as Loco Translate.</p>
+</main>
+</body>
+</html>

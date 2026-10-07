@@ -1,0 +1,1015 @@
+# Copyright (C) 2026 Abdul Kadir
+# This file is distributed under the GPL-2.0-or-later.
+msgid ""
+msgstr ""
+"Project-Id-Version: RevGuard Pro 1.0.0\n"
+"Report-Msgid-Bugs-To: \n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2026-10-06T15:49:09+00:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: WP-CLI 2.12.0\n"
+"X-Domain: revguard-pro\n"
+
+#. Plugin Name of the plugin
+#: revguard-pro.php
+#: src/Admin/Menu.php:68
+#: src/Admin/Menu.php:69
+msgid "RevGuard Pro"
+msgstr ""
+
+#. Description of the plugin
+#: revguard-pro.php
+msgid "Fast, cache-aware ad management for WordPress publishers: ad groups, scheduling, placements, weighted rotation and lightweight aggregate analytics."
+msgstr ""
+
+#. Author of the plugin
+#: revguard-pro.php
+msgid "Abdul Kadir"
+msgstr ""
+
+#. translators: 1: required PHP version, 2: current PHP version.
+#: revguard-pro.php:40
+#: src/Environment/Requirements.php:52
+#, php-format
+msgid "RevGuard Pro requires PHP %1$s or higher. This server runs PHP %2$s."
+msgstr ""
+
+#: revguard-pro.php:51
+msgid "RevGuard Pro is already loaded from another folder. This copy was not started; please deactivate and delete the duplicate."
+msgstr ""
+
+#: revguard-pro.php:65
+msgid "RevGuard Pro could not start because its files are incomplete. Please reinstall the plugin from a fresh copy."
+msgstr ""
+
+#: src/Admin/Form/ErrorMessages.php:48
+msgid "This field is required."
+msgstr ""
+
+#: src/Admin/Form/ErrorMessages.php:49
+msgid "This is too long."
+msgstr ""
+
+#: src/Admin/Form/ErrorMessages.php:50
+msgid "This number is outside the allowed range."
+msgstr ""
+
+#: src/Admin/Form/ErrorMessages.php:51
+msgid "This appears more than once."
+msgstr ""
+
+#: src/Admin/Form/ErrorMessages.php:52
+msgid "There are too many items."
+msgstr ""
+
+#: src/Admin/Form/ErrorMessages.php:53
+msgid "The selected item does not exist."
+msgstr ""
+
+#: src/Admin/Form/ErrorMessages.php:54
+msgid "The end must be after the start."
+msgstr ""
+
+#: src/Admin/Form/ErrorMessages.php:55
+msgid "That local time does not exist because of a daylight-saving change. Choose another time."
+msgstr ""
+
+#: src/Admin/Form/ErrorMessages.php:56
+msgid "That local time happens twice because of a daylight-saving change. Choose another time."
+msgstr ""
+
+#: src/Admin/Form/ErrorMessages.php:57
+msgid "An active ad needs ad code. Add the code or save it as inactive."
+msgstr ""
+
+#: src/Admin/Form/ErrorMessages.php:58
+msgid "An active placement needs a target. Choose an ad or group, or save it as inactive."
+msgstr ""
+
+#: src/Admin/Form/ErrorMessages.php:59
+msgid "You are not allowed to change this setting."
+msgstr ""
+
+#: src/Admin/Form/ErrorMessages.php:60
+msgid "It could not be saved. Nothing was changed. Please try again."
+msgstr ""
+
+#: src/Admin/Form/ErrorMessages.php:61
+msgid "This value is not valid."
+msgstr ""
+
+#: src/Admin/Presenter/Labels.php:30
+#: src/Admin/Table/EntityTable.php:118
+msgid "Active"
+msgstr ""
+
+#: src/Admin/Presenter/Labels.php:30
+#: src/Admin/Table/EntityTable.php:119
+msgid "Inactive"
+msgstr ""
+
+#: src/Admin/Presenter/Labels.php:40
+msgid "In order"
+msgstr ""
+
+#: src/Admin/Presenter/Labels.php:40
+msgid "Weighted random"
+msgstr ""
+
+#: src/Admin/Presenter/Labels.php:50
+msgid "Before the content"
+msgstr ""
+
+#: src/Admin/Presenter/Labels.php:51
+msgid "After the content"
+msgstr ""
+
+#: src/Admin/Presenter/Labels.php:52
+msgid "After a paragraph"
+msgstr ""
+
+#: src/Admin/Presenter/Labels.php:53
+msgid "After a heading"
+msgstr ""
+
+#: src/Admin/Presenter/Labels.php:54
+msgid "At a point in the content"
+msgstr ""
+
+#: src/Admin/Presenter/Labels.php:55
+msgid "Manual (shortcode or block only)"
+msgstr ""
+
+#: src/Admin/Presenter/Labels.php:65
+msgid "Worth checking"
+msgstr ""
+
+#: src/Admin/Presenter/Labels.php:65
+msgid "For your information"
+msgstr ""
+
+#: src/Admin/Presenter/RowPresenter.php:40
+msgid "Always"
+msgstr ""
+
+#. translators: 1: start date and time, 2: end date and time.
+#: src/Admin/Presenter/RowPresenter.php:46
+#, php-format
+msgid "%1$s to %2$s"
+msgstr ""
+
+#. translators: %s: start date and time.
+#: src/Admin/Presenter/RowPresenter.php:49
+#, php-format
+msgid "From %s"
+msgstr ""
+
+#. translators: %s: end date and time.
+#: src/Admin/Presenter/RowPresenter.php:52
+#, php-format
+msgid "Until %s"
+msgstr ""
+
+#: src/Admin/Presenter/RowPresenter.php:55
+msgid "(ended)"
+msgstr ""
+
+#: src/Admin/Presenter/RowPresenter.php:56
+msgid "(not started)"
+msgstr ""
+
+#: src/Admin/Presenter/RowPresenter.php:68
+msgid "Unreadable (matches nothing)"
+msgstr ""
+
+#: src/Admin/Presenter/RowPresenter.php:70
+msgid "Everyone"
+msgstr ""
+
+#: src/Admin/Presenter/RowPresenter.php:70
+msgid "Restricted by rules"
+msgstr ""
+
+#. translators: 1: number of ads, 2: rotation mode.
+#: src/Admin/Presenter/RowPresenter.php:82
+#, php-format
+msgid "%1$d ad, %2$s"
+msgid_plural "%1$d ads, %2$s"
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: %d: paragraph number.
+#: src/Admin/Presenter/RowPresenter.php:97
+#, php-format
+msgid "After paragraph %d"
+msgstr ""
+
+#. translators: 1: heading level number, 2: which occurrence.
+#: src/Admin/Presenter/RowPresenter.php:102
+#, php-format
+msgid "After heading H%1$d, occurrence %2$d"
+msgstr ""
+
+#. translators: %d: percent of the way through the content.
+#: src/Admin/Presenter/RowPresenter.php:108
+#, php-format
+msgid "At %d%% of the content"
+msgstr ""
+
+#: src/Admin/Presenter/RowPresenter.php:124
+msgid "No target"
+msgstr ""
+
+#. translators: %d: ad id.
+#: src/Admin/Presenter/RowPresenter.php:129
+#, php-format
+msgid "Ad #%d (missing)"
+msgstr ""
+
+#. translators: %d: group id.
+#: src/Admin/Presenter/RowPresenter.php:132
+#, php-format
+msgid "Group #%d (missing)"
+msgstr ""
+
+#: src/Admin/Screen/AdsScreen.php:123
+#: src/Admin/ScreenId.php:45
+#: src/Admin/Table/EntityTable.php:243
+#: src/Admin/Table/GroupsTable.php:31
+#: views/admin/placements-form.php:44
+msgid "Ads"
+msgstr ""
+
+#: src/Admin/Screen/AdsScreen.php:124
+#: views/admin/ads-form.php:30
+msgid "Add new ad"
+msgstr ""
+
+#: src/Admin/Screen/AdsScreen.php:125
+msgid "No ads yet"
+msgstr ""
+
+#: src/Admin/Screen/AdsScreen.php:126
+msgid "An ad is the code you want to show: an ad unit code or your own HTML. Add one, then choose where it appears with a placement."
+msgstr ""
+
+#: src/Admin/Screen/GroupsScreen.php:125
+#: src/Admin/ScreenId.php:46
+#: src/Admin/Table/EntityTable.php:244
+#: views/admin/placements-form.php:45
+msgid "Groups"
+msgstr ""
+
+#: src/Admin/Screen/GroupsScreen.php:126
+#: views/admin/groups-form.php:41
+msgid "Add new group"
+msgstr ""
+
+#: src/Admin/Screen/GroupsScreen.php:127
+msgid "No groups yet"
+msgstr ""
+
+#: src/Admin/Screen/GroupsScreen.php:128
+msgid "A group rotates several ads in one spot, in order or by weight. Groups are optional: a placement can show a single ad."
+msgstr ""
+
+#: src/Admin/Screen/PlacementsScreen.php:131
+#: src/Admin/ScreenId.php:47
+#: src/Admin/Table/EntityTable.php:245
+msgid "Placements"
+msgstr ""
+
+#: src/Admin/Screen/PlacementsScreen.php:132
+#: views/admin/placements-form.php:56
+msgid "Add new placement"
+msgstr ""
+
+#: src/Admin/Screen/PlacementsScreen.php:133
+msgid "No placements yet"
+msgstr ""
+
+#: src/Admin/Screen/PlacementsScreen.php:134
+msgid "A placement decides where an ad or group appears in your posts, for example after the third paragraph. You can also use the shortcode or the block."
+msgstr ""
+
+#: src/Admin/ScreenId.php:44
+#: views/admin/dashboard.php:23
+msgid "Dashboard"
+msgstr ""
+
+#: src/Admin/ScreenId.php:48
+#: views/admin/analytics.php:18
+msgid "Analytics"
+msgstr ""
+
+#: src/Admin/ScreenId.php:49
+#: views/admin/settings.php:19
+msgid "Settings"
+msgstr ""
+
+#: src/Admin/Support/NoticeCode.php:49
+msgid "Saved."
+msgstr ""
+
+#: src/Admin/Support/NoticeCode.php:50
+msgid "Deleted."
+msgstr ""
+
+#: src/Admin/Support/NoticeCode.php:51
+msgid "Activated."
+msgstr ""
+
+#: src/Admin/Support/NoticeCode.php:52
+msgid "Deactivated."
+msgstr ""
+
+#: src/Admin/Support/NoticeCode.php:58
+msgid "Nothing was changed. Select at least one item and choose an action."
+msgstr ""
+
+#: src/Admin/Support/NoticeCode.php:59
+msgid "That item is still used by something else, so it was not deleted. Remove it from the placement or group first."
+msgstr ""
+
+#: src/Admin/Support/NoticeCode.php:60
+msgid "That item no longer exists."
+msgstr ""
+
+#: src/Admin/Support/NoticeCode.php:61
+msgid "The change could not be saved. Nothing was changed. Please try again."
+msgstr ""
+
+#: src/Admin/Support/NoticeCode.php:62
+msgid "Settings saved."
+msgstr ""
+
+#: src/Admin/Table/AdsTable.php:29
+#: src/Admin/Table/GroupsTable.php:29
+#: src/Admin/Table/PlacementsTable.php:37
+#: views/admin/ads-form.php:34
+#: views/admin/ads-form.php:52
+#: views/admin/groups-form.php:45
+#: views/admin/groups-form.php:61
+#: views/admin/placements-form.php:60
+#: views/admin/placements-form.php:81
+msgid "Name"
+msgstr ""
+
+#: src/Admin/Table/AdsTable.php:30
+#: src/Admin/Table/GroupsTable.php:30
+#: src/Admin/Table/PlacementsTable.php:38
+#: views/admin/ads-form.php:35
+#: views/admin/ads-form.php:64
+#: views/admin/groups-form.php:46
+#: views/admin/groups-form.php:73
+#: views/admin/placements-form.php:61
+#: views/admin/placements-form.php:93
+msgid "Status"
+msgstr ""
+
+#: src/Admin/Table/AdsTable.php:31
+#: views/admin/ads-form.php:89
+msgid "Schedule"
+msgstr ""
+
+#: src/Admin/Table/AdsTable.php:32
+#: views/admin/ads-form.php:104
+#: views/admin/placements-form.php:188
+msgid "Shown to"
+msgstr ""
+
+#: src/Admin/Table/EntityTable.php:103
+#: src/Admin/Table/EntityTable.php:186
+msgid "Activate"
+msgstr ""
+
+#: src/Admin/Table/EntityTable.php:104
+#: src/Admin/Table/EntityTable.php:186
+msgid "Deactivate"
+msgstr ""
+
+#: src/Admin/Table/EntityTable.php:105
+#: src/Admin/Table/EntityTable.php:199
+msgid "Delete…"
+msgstr ""
+
+#: src/Admin/Table/EntityTable.php:117
+msgid "All"
+msgstr ""
+
+#. translators: %s: item name.
+#: src/Admin/Table/EntityTable.php:146
+#, php-format
+msgid "Select %s"
+msgstr ""
+
+#: src/Admin/Table/EntityTable.php:170
+msgid "Edit"
+msgstr ""
+
+#: src/Admin/Table/EntityTable.php:254
+msgid "Nothing matches this view."
+msgstr ""
+
+#: src/Admin/Table/PlacementsTable.php:39
+#: views/admin/placements-form.php:62
+#: views/admin/placements-form.php:112
+msgid "Position"
+msgstr ""
+
+#: src/Admin/Table/PlacementsTable.php:40
+msgid "Shows"
+msgstr ""
+
+#: src/Admin/Table/PlacementsTable.php:41
+#: views/admin/placements-form.php:68
+#: views/admin/placements-form.php:172
+msgid "Priority"
+msgstr ""
+
+#: src/Admin/View/Fields.php:191
+msgid "Nothing was saved. Please fix the following:"
+msgstr ""
+
+#: src/Admin/View/Fields.php:260
+#: views/admin/groups-form.php:100
+msgid "Error:"
+msgstr ""
+
+#. translators: 1: required WordPress version, 2: current WordPress version.
+#: src/Environment/Requirements.php:58
+#, php-format
+msgid "RevGuard Pro requires WordPress %1$s or higher. This site runs WordPress %2$s."
+msgstr ""
+
+#: src/Environment/Requirements.php:62
+msgid "RevGuard Pro cannot start in this environment."
+msgstr ""
+
+#. translators: %d: number of active automatic placements.
+#: src/Guardrails/GuardrailMessages.php:32
+#, php-format
+msgid "%d automatic placements are active. A page may show that many ads at once, which can make content harder to read. Consider whether you need all of them."
+msgstr ""
+
+#. translators: %d: number of placements near the top of the content.
+#: src/Guardrails/GuardrailMessages.php:37
+#, php-format
+msgid "%d active placements sit near the top of the content. Several ads before the content may make it hard to find. Consider spacing them out."
+msgstr ""
+
+#. translators: 1: other placement id, 2: distance between the two positions.
+#: src/Guardrails/GuardrailMessages.php:42
+#, php-format
+msgid "This placement is very close to placement #%1$d (distance %2$d). Ads placed this close together may feel crowded. Review the spacing."
+msgstr ""
+
+#. translators: %d: id of the placement this one repeats.
+#: src/Guardrails/GuardrailMessages.php:48
+#, php-format
+msgid "This placement repeats placement #%d (same position and same target). The second one may add nothing. Consider removing it."
+msgstr ""
+
+#: src/Guardrails/GuardrailMessages.php:51
+msgid "Active placements exist, but RevGuard Pro is not inserting them automatically right now (another plugin owns insertion, or automatic insertion is turned off). Review the settings if you expected them to appear."
+msgstr ""
+
+#: src/Guardrails/GuardrailMessages.php:52
+msgid "HTML ad code is output without filtering. Anyone who can edit ads can then run scripts on your pages. Consider turning this off unless you fully trust every editor."
+msgstr ""
+
+#: src/Guardrails/GuardrailMessages.php:53
+msgid "This placement points at an ad or group that no longer exists, so it may show nothing. Review its target."
+msgstr ""
+
+#: src/Guardrails/GuardrailMessages.php:54
+msgid "This placement is active, but its target cannot show right now (it may be inactive, outside its schedule, empty, or have unreadable targeting). Review the target."
+msgstr ""
+
+#: src/Guardrails/GuardrailMessages.php:55
+msgid "The targeting stored for this placement could not be read, so it matches nothing. Review and save its targeting again."
+msgstr ""
+
+#: src/Guardrails/GuardrailMessages.php:56
+msgid "This active ad's HTML is reduced to nothing by the output filter (for example, only scripts), so it may show nothing. Review the ad code."
+msgstr ""
+
+#: src/Guardrails/GuardrailMessages.php:57
+msgid "This active ad's schedule has ended, so it no longer shows. Consider extending the schedule or deactivating the ad."
+msgstr ""
+
+#: src/Guardrails/GuardrailMessages.php:58
+msgid "The targeting stored for this active ad could not be read, so it matches nothing. Review and save its targeting again."
+msgstr ""
+
+#: src/Guardrails/GuardrailMessages.php:59
+msgid "This active group has no ads, so it may show nothing. Consider adding ads or deactivating it."
+msgstr ""
+
+#: src/Guardrails/GuardrailMessages.php:60
+msgid "None of the ads in this active group can show right now (inactive, outside their schedule, or unreadable targeting). Review the members."
+msgstr ""
+
+#: src/Guardrails/GuardrailMessages.php:61
+msgid "There are more records than the checks read, so some checks were skipped. Review the rest by hand."
+msgstr ""
+
+#: src/Guardrails/GuardrailMessages.php:62
+msgid "Some records could not be read, so this report is incomplete. An empty result does not mean everything was checked."
+msgstr ""
+
+#: src/Provider/AdminProvider.php:72
+#: src/Security/AdminRequestGuard.php:52
+msgid "Sorry, you are not allowed to do that."
+msgstr ""
+
+#: src/Security/AdminRequestGuard.php:51
+msgid "The link you followed has expired. Please go back and try again."
+msgstr ""
+
+#: views/admin/ads-form.php:30
+msgid "Edit ad"
+msgstr ""
+
+#: views/admin/ads-form.php:36
+msgid "Type"
+msgstr ""
+
+#: views/admin/ads-form.php:37
+#: views/admin/ads-form.php:76
+msgid "Ad code"
+msgstr ""
+
+#: views/admin/ads-form.php:38
+#: views/admin/ads-form.php:97
+msgid "Start"
+msgstr ""
+
+#: views/admin/ads-form.php:39
+#: views/admin/ads-form.php:98
+msgid "End"
+msgstr ""
+
+#: views/admin/ads-form.php:47
+#: views/admin/analytics.php:79
+#: views/admin/groups-form.php:110
+#: blocks/ad/editor.js:46
+msgid "Ad"
+msgstr ""
+
+#: views/admin/ads-form.php:55
+msgid "Only you see this. Use something you will recognise in a list."
+msgstr ""
+
+#: views/admin/ads-form.php:71
+msgid "An inactive ad is never shown."
+msgstr ""
+
+#: views/admin/ads-form.php:79
+msgid "Ad code is HTML. Unless Settings allow unfiltered code, it is filtered when shown: text, links, images and basic layout are kept; scripts, frames and event handlers are removed. The code is shown here as text and is never run in this screen."
+msgstr ""
+
+#. translators: %s: site time zone name.
+#: views/admin/ads-form.php:93
+#, php-format
+msgid "Leave both empty to show the ad all the time. Times are in your site time zone (%s)."
+msgstr ""
+
+#: views/admin/ads-form.php:98
+msgid "The ad stops showing at this time."
+msgstr ""
+
+#: views/admin/ads-form.php:106
+#: views/admin/placements-form.php:190
+msgid "Targeting rules are kept exactly as they are when you save. A rules editor is planned for a later release."
+msgstr ""
+
+#: views/admin/ads-form.php:114
+msgid "Save ad"
+msgstr ""
+
+#: views/admin/ads-form.php:115
+#: views/admin/entity-confirm.php:38
+#: views/admin/groups-form.php:156
+#: views/admin/placements-form.php:199
+msgid "Cancel"
+msgstr ""
+
+#: views/admin/analytics.php:20
+msgid "Time range"
+msgstr ""
+
+#. translators: %d: number of days.
+#: views/admin/analytics.php:27
+#, php-format
+msgid "Last %d days"
+msgstr ""
+
+#: views/admin/analytics.php:36
+msgid "Counting is turned off in Settings. Numbers recorded earlier are still shown."
+msgstr ""
+
+#: views/admin/analytics.php:40
+msgid "The numbers could not be loaded right now. Nothing has been lost; please try again."
+msgstr ""
+
+#: views/admin/analytics.php:43
+msgid "No impressions in this period"
+msgstr ""
+
+#: views/admin/analytics.php:44
+msgid "An impression is counted when an ad is shown on a page your visitors load. Nothing has been recorded for this range yet."
+msgstr ""
+
+#: views/admin/analytics.php:47
+msgid "Total"
+msgstr ""
+
+#: views/admin/analytics.php:51
+msgid "Impressions per day"
+msgstr ""
+
+#: views/admin/analytics.php:55
+msgid "Impressions for each day, oldest first"
+msgstr ""
+
+#: views/admin/analytics.php:57
+msgid "Date (UTC)"
+msgstr ""
+
+#: views/admin/analytics.php:58
+#: views/admin/analytics.php:80
+msgid "Impressions"
+msgstr ""
+
+#: views/admin/analytics.php:59
+msgid "Relative size"
+msgstr ""
+
+#: views/admin/analytics.php:74
+msgid "Top ads"
+msgstr ""
+
+#: views/admin/analytics.php:77
+msgid "Ads with the most impressions in this period"
+msgstr ""
+
+#. translators: %d: ad id.
+#: views/admin/analytics.php:89
+#, php-format
+msgid "Deleted ad #%d"
+msgstr ""
+
+#: views/admin/analytics.php:118
+msgid "These are server-side impressions: an ad is counted when its code is added to a page that loads. Pages served from a full-page cache do not run this step and are not counted, and this is not viewability or click data. No visitor information is stored."
+msgstr ""
+
+#: views/admin/dashboard.php:25
+msgid "At a glance"
+msgstr ""
+
+#: views/admin/dashboard.php:27
+msgid "The counts could not be loaded right now."
+msgstr ""
+
+#: views/admin/dashboard.php:32
+msgid "Active ads"
+msgstr ""
+
+#: views/admin/dashboard.php:36
+msgid "Active groups"
+msgstr ""
+
+#: views/admin/dashboard.php:40
+msgid "Active placements"
+msgstr ""
+
+#. translators: %d: number of days.
+#: views/admin/dashboard.php:49
+#, php-format
+msgid "Impressions, last %d days"
+msgstr ""
+
+#: views/admin/dashboard.php:55
+msgid "Counting is turned off in Settings."
+msgstr ""
+
+#: views/admin/dashboard.php:62
+msgid "Getting started"
+msgstr ""
+
+#: views/admin/dashboard.php:64
+msgid "Add your first ad."
+msgstr ""
+
+#: views/admin/dashboard.php:65
+msgid "Add a placement to choose where it appears."
+msgstr ""
+
+#: views/admin/dashboard.php:72
+msgid "Suggestions"
+msgstr ""
+
+#: views/admin/dashboard.php:73
+msgid "These suggestions look only at how your ads are set up. They are advice, not an approval, a certification or a compliance check, and they cannot tell you whether a page is acceptable to any ad network."
+msgstr ""
+
+#: views/admin/dashboard.php:75
+msgid "The suggestions could not be loaded right now."
+msgstr ""
+
+#: views/admin/dashboard.php:78
+msgid "Some records could not be read or some checks were skipped, so this list is incomplete."
+msgstr ""
+
+#: views/admin/dashboard.php:81
+msgid "None of the checks that ran had anything to suggest."
+msgstr ""
+
+#: views/admin/dashboard.php:93
+msgid "Review"
+msgstr ""
+
+#. translators: %d: number of further suggestions.
+#: views/admin/dashboard.php:103
+#, php-format
+msgid "and %d more suggestion."
+msgid_plural "and %d more suggestions."
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: %d: number of items about to be deleted.
+#: views/admin/entity-confirm.php:24
+msgid "Delete this item?"
+msgid_plural "Delete these %d items?"
+msgstr[0] ""
+msgstr[1] ""
+
+#: views/admin/entity-confirm.php:35
+msgid "This cannot be undone. Anything that is still in use is kept and you will be told."
+msgstr ""
+
+#: views/admin/entity-confirm.php:37
+msgid "Delete permanently"
+msgstr ""
+
+#: views/admin/groups-form.php:41
+msgid "Edit group"
+msgstr ""
+
+#: views/admin/groups-form.php:47
+#: views/admin/groups-form.php:84
+msgid "Rotation"
+msgstr ""
+
+#: views/admin/groups-form.php:48
+#: views/admin/groups-form.php:97
+#: views/admin/groups-form.php:105
+msgid "Ads in this group"
+msgstr ""
+
+#: views/admin/groups-form.php:56
+msgid "Group"
+msgstr ""
+
+#: views/admin/groups-form.php:91
+msgid "Weighted random picks an ad by its weight on every page. In order uses the order numbers below and shows the first ad that is allowed to appear."
+msgstr ""
+
+#: views/admin/groups-form.php:98
+msgid "Tick the ads to include. Weight (1 to 1000) is used by weighted rotation. Order is used by in-order rotation; lower numbers come first."
+msgstr ""
+
+#: views/admin/groups-form.php:103
+msgid "You have no ads yet. Add an ad first, then come back to build a group."
+msgstr ""
+
+#: views/admin/groups-form.php:107
+msgid "Ads you can add to this group"
+msgstr ""
+
+#: views/admin/groups-form.php:109
+msgid "Include"
+msgstr ""
+
+#: views/admin/groups-form.php:111
+msgid "Order"
+msgstr ""
+
+#: views/admin/groups-form.php:112
+msgid "Weight"
+msgstr ""
+
+#. translators: %s: ad name.
+#: views/admin/groups-form.php:127
+#, php-format
+msgid "Include %s"
+msgstr ""
+
+#. translators: %s: ad name.
+#: views/admin/groups-form.php:133
+#, php-format
+msgid "Order for %s"
+msgstr ""
+
+#. translators: %s: ad name.
+#: views/admin/groups-form.php:138
+#, php-format
+msgid "Weight for %s"
+msgstr ""
+
+#: views/admin/groups-form.php:146
+msgid "Only the first 500 ads are listed."
+msgstr ""
+
+#: views/admin/groups-form.php:155
+msgid "Save group"
+msgstr ""
+
+#: views/admin/placements-form.php:42
+msgid "— Choose an ad or group —"
+msgstr ""
+
+#: views/admin/placements-form.php:56
+msgid "Edit placement"
+msgstr ""
+
+#: views/admin/placements-form.php:63
+#: views/admin/placements-form.php:116
+msgid "Paragraph number"
+msgstr ""
+
+#: views/admin/placements-form.php:64
+#: views/admin/placements-form.php:130
+msgid "Heading level"
+msgstr ""
+
+#: views/admin/placements-form.php:65
+#: views/admin/placements-form.php:144
+msgid "Which heading"
+msgstr ""
+
+#: views/admin/placements-form.php:66
+#: views/admin/placements-form.php:158
+msgid "Percent of the content"
+msgstr ""
+
+#: views/admin/placements-form.php:67
+#: views/admin/placements-form.php:102
+msgid "What to show"
+msgstr ""
+
+#: views/admin/placements-form.php:76
+msgid "Placement"
+msgstr ""
+
+#: views/admin/placements-form.php:100
+msgid "An inactive placement is never used."
+msgstr ""
+
+#: views/admin/placements-form.php:102
+msgid "A single ad, or a group that rotates several ads. An active placement needs one."
+msgstr ""
+
+#: views/admin/placements-form.php:104
+msgid "Only the first 500 ads and groups are listed."
+msgstr ""
+
+#: views/admin/placements-form.php:110
+msgid "Where it appears"
+msgstr ""
+
+#: views/admin/placements-form.php:112
+msgid "Fill in only the setting that goes with the position you choose. The others are ignored."
+msgstr ""
+
+#: views/admin/placements-form.php:119
+msgid "For \"After a paragraph\": 1 to 100."
+msgstr ""
+
+#: views/admin/placements-form.php:133
+msgid "For \"After a heading\": 2 to 6 (H2 to H6)."
+msgstr ""
+
+#: views/admin/placements-form.php:147
+msgid "For \"After a heading\": 1 means the first heading of that level, 2 the second, and so on."
+msgstr ""
+
+#: views/admin/placements-form.php:161
+msgid "For \"At a point in the content\": 1 to 99. 50 is about the middle."
+msgstr ""
+
+#: views/admin/placements-form.php:175
+msgid "Lower numbers are placed first. If two placements want the same spot, the lower number wins."
+msgstr ""
+
+#: views/admin/placements-form.php:198
+msgid "Save placement"
+msgstr ""
+
+#: views/admin/settings.php:23
+msgid "Keep statistics for"
+msgstr ""
+
+#: views/admin/settings.php:24
+#: views/admin/settings.php:38
+msgid "Allow unfiltered HTML ad code"
+msgstr ""
+
+#: views/admin/settings.php:32
+msgid "Showing ads"
+msgstr ""
+
+#: views/admin/settings.php:34
+msgid "Insert ads automatically using placements"
+msgstr ""
+
+#: views/admin/settings.php:34
+msgid "Turn this off to show ads only where you use the shortcode or block."
+msgstr ""
+
+#: views/admin/settings.php:42
+msgid "Advanced. Custom HTML ads are shown exactly as written, including scripts. Anyone who can edit ads can then run code on your pages. Leave this off unless you fully trust every editor."
+msgstr ""
+
+#: views/admin/settings.php:43
+msgid "Advanced. Only a user who is allowed to post unfiltered HTML can turn this on."
+msgstr ""
+
+#: views/admin/settings.php:50
+msgid "Statistics"
+msgstr ""
+
+#: views/admin/settings.php:52
+msgid "Count impressions"
+msgstr ""
+
+#: views/admin/settings.php:52
+msgid "Counts how often each ad is added to a page, per day. No visitor information is stored."
+msgstr ""
+
+#: views/admin/settings.php:56
+msgid "Keep statistics for (days)"
+msgstr ""
+
+#: views/admin/settings.php:59
+msgid "Older daily totals are deleted automatically. 7 to 3650."
+msgstr ""
+
+#: views/admin/settings.php:71
+msgid "Uninstalling"
+msgstr ""
+
+#: views/admin/settings.php:72
+msgid "Delete all RevGuard Pro data when the plugin is deleted"
+msgstr ""
+
+#: views/admin/settings.php:72
+msgid "Removes your ads, groups, placements, statistics and settings. It does not touch the free RevGuard plugin. Leave this off to keep your data."
+msgstr ""
+
+#: views/admin/settings.php:78
+msgid "Save settings"
+msgstr ""
+
+#: blocks/ad/editor.js:16
+msgid "Select..."
+msgstr ""
+
+#: blocks/ad/editor.js:39
+msgid "You do not have permission to choose RevGuard Pro ads."
+msgstr ""
+
+#: blocks/ad/editor.js:44
+msgid "Target type"
+msgstr ""
+
+#: blocks/ad/editor.js:46
+msgid "Ad group"
+msgstr ""
+
+#: blocks/ad/editor.js:51
+msgid "None exist yet."
+msgstr ""
+
+#: blocks/ad/editor.js:53
+msgid "Target"
+msgstr ""
+
+#: blocks/ad/editor.js:65
+msgid "Ad target"
+msgstr ""
+
+#: blocks/ad/block.json
+msgctxt "block title"
+msgid "RevGuard Pro Ad"
+msgstr ""
+
+#: blocks/ad/block.json
+msgctxt "block description"
+msgid "Shows a RevGuard Pro ad or ad group. Selection and schedule are decided on the server."
+msgstr ""

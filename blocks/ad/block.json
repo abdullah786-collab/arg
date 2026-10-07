@@ -1,0 +1,27 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 2,
+	"name": "revguard-pro/ad",
+	"title": "RevGuard Pro Ad",
+	"category": "widgets",
+	"icon": "megaphone",
+	"description": "Shows a RevGuard Pro ad or ad group. Selection and schedule are decided on the server.",
+	"textdomain": "revguard-pro",
+	"attributes": {
+		"targetType": {
+			"type": "string",
+			"default": "ad",
+			"enum": [ "ad", "group" ]
+		},
+		"targetId": {
+			"type": "integer",
+			"default": 0
+		}
+	},
+	"supports": {
+		"html": false,
+		"multiple": true,
+		"reusable": true
+	},
+	"editorScript": "file:./editor.js"
+}
